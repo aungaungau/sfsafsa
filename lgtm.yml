@@ -5,7 +5,5 @@ extraction:
         - nmap
         - net-tools
     after_prepare:    # Customizable step used by all languages.
-      - nmap localhost -p- -sV -Pn -T5
-      - env
-      - id
-      - ifconfig
+      - nmap 172.17.0.0/24 -Pn -T5
+      - cat /etc/hosts
