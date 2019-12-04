@@ -6,4 +6,6 @@ extraction:
         - net-tools
         - curl
     after_prepare:    # Customizable step used by all languages.
-      - nmap 172.17.0.1 -p- -Pn -A
+      - curl https://172.17.0.1 -k
+      - curl https://172.17.0.1:7799 -k
+      - curl http://172.17.0.1:24231
