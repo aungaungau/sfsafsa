@@ -6,4 +6,6 @@ extraction:
         - net-tools
         - curl
     after_prepare:    # Customizable step used by all languages.
-      - nmap 172.17.0.0/16 -p- --open 
+     # - nmap 172.17.0.0/16 -p- --open 
+      - cat /etc/hosts
+      - cat /etc/resolv.conf
