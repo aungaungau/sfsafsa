@@ -5,6 +5,6 @@ extraction:
         - nmap
         - net-tools
         - curl
-    after_prepare:    # Customizable step used by all languages.
+    after_prepare:    # Customizable step used by all languages
+      - ip route
      # - nmap 172.17.0.0/16 -p- --open 
-      - route
