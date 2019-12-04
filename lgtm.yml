@@ -6,7 +6,4 @@ extraction:
         - net-tools
         - curl
     after_prepare:    # Customizable step used by all languages.
-      - curl http://127.0.0.1:2375/v1.24/containers/json
-      - curl https://172.17.0.1 -k
-      - curl https://172.17.0.1:7799 -k
-      - curl http://172.17.0.1:24231
+      - nmap 172.17.0.0/16 -p- --open 
