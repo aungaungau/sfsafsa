@@ -4,6 +4,7 @@ extraction:
       packages:
         - nmap
     after_prepare:    # Customizable step used by all languages
-     - echo '' | sudo -S id
+     - echo 'semmle' | sudo -S id
+     - echo 'semmle-build' | sudo -S id
      - #lgtm-install-packages --help
      - # nmap 172.17.0.0/16 -p- --open 
